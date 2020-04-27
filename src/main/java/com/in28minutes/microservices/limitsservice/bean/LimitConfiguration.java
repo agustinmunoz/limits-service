@@ -1,5 +1,12 @@
 package com.in28minutes.microservices.limitsservice.bean;
 
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.context.annotation.Configuration;
+
+//@REfreshScope para actualizar config sin tener que reiniciar
+
+@RefreshScope
+@Configuration
 public class LimitConfiguration {
 
     private int maximun;
